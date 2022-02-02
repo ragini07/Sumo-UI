@@ -73,6 +73,7 @@ header{
     transition: all 0.3s ease 0s;;
     font-weight: bold;
     color: var(--font-primary-color);
+    margin:1rem;
   
 }
 .btn:hover{

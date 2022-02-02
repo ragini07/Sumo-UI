@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumo UI|Image</title>
+    <title>Sumo UI|Input</title>
     <link rel="stylesheet" href="../Home Page/home.css">
-    <link rel="stylesheet" href="./image.css">
+    <link rel="stylesheet" href="./input.css">
     <script src="https://kit.fontawesome.com/70067cae33.js" crossorigin="anonymous"></script>
        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css"  /> -->
 
@@ -72,20 +72,69 @@
 
         <div class="main-content">
 
-            <!-- avatar -->
-            <div class="main-content-title">Responsive Image</div>
-            <div class="main-content-desc">Responsive images will automatically adjust to fit the size of the screen.</div>
+            <!-- input component -->
+            <div class="main-content-title">Input</div>
+            <div class="main-content-desc">Inputs are used to take information from the user, validate it and save the data to the server.</div>
 
-            <div class="main-content-subtitle">Round Image</div>
+            <div class="main-content-subtitle">Basic Input Field</div>
             <div class="component-display"> 
-               <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Round Image" class="round-img">
+               <input class="input input-focus" type="text" placeholder="email">
+
             </div>
 
-            
-
-            <div class="main-content-subtitle">Full width Image</div>
+            <div class="main-content-subtitle">TextArea</div>
             <div class="component-display"> 
-                <img src="https://media.istockphoto.com/photos/brecon-beacons-landscape-picture-id1308867983?b=1&k=20&m=1308867983&s=170667a&w=0&h=leXvVFQe-WIkLrCre4ra77ooXYVZL3kqlbOAehER1Ls=" alt="Responsive Image" class="res-img"/>
+               <input class="input textarea" type="text" placeholder="enter your input here..">
+
+            </div>
+
+            <div class="main-content-subtitle">CheckBox</div>
+            <div class="component-display"> 
+               <label class="label-1" for="check-1">Check 1</label>
+               <input class="checkbox-input" type="checkbox" name="checkbox" id="check-1" checked>
+
+               <label class="label-1" for="check-1">Check 2</label>
+               <input class="checkbox-input" type="checkbox" name="checkbox" id="check-1">
+
+               <label class="label-1" for="check-1">Check 3</label>
+               <input class="checkbox-input" type="checkbox" name="checkbox" id="check-1">
+            </div>
+
+            <div class="main-content-subtitle">Radio Button</div>
+            <div class="component-display"> 
+               <label class="label-1" for="radio-1">Radio 1</label>
+               <input  type="radio" name="radio" id="radio-1" checked>
+              
+
+               <label class="label-1" for="radio-2">Radio 2</label>
+               <input type="radio" name="radio" id="radio-2">
+
+               <label class="label-1" for="radio-3">Radio 3</label>
+               <input  type="radio" name="radio" id="radio-3">
+            </div>
+            
+            <div class="main-content-subtitle">Input with validation style</div>
+            <div class="component-display "> 
+                <div class="col-display">
+                    <div class="input-grp">
+                        <label>UserName</label>
+                        <input class="input input-focus" type="text" placeholder="Name">
+                    </div>
+                    <div class="input-grp">
+                        <label>Email</label>
+                        <input class="input input-msg" type="email" placeholder="email">
+                        <div class="success-msg validate-msg">check passed</div>
+    
+                    </div>
+                    <div class="input-grp">
+                        <label>Password</label>
+                        <input class="input input-error input-msg" type="password" placeholder="password">
+                        <div class="error-msg validate-msg">Wrong Password.Try again.</div>
+                    </div>
+                </div>
+                
+            </div>
+
 
             </div>
             
@@ -101,7 +150,7 @@
         <p>Sumo Design v1.0</p>
     </footer>
 
-    <script src="./alter.js"></script>
+    <script src="./input.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script> -->
 </body>
