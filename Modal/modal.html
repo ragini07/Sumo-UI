@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumo UI|Toast</title>
+    <title>Sumo UI|Modal</title>
     <link rel="stylesheet" href="../Home Page/home.css">
-    <link rel="stylesheet" href="./toast.css">
+    <link rel="stylesheet" href="./modal.css">
     <script src="https://kit.fontawesome.com/70067cae33.js" crossorigin="anonymous"></script>
        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-light.min.css"  /> -->
 
@@ -73,13 +73,28 @@
         <div class="main-content">
 
             <!-- avatar -->
-            <div class="main-content-title">Toast</div>
-            <div class="main-content-desc">Toast are  used as a tooltips/popups to show a message at the top/bottom of the screen.</div>
+            <div class="main-content-title">Modal</div>
+            <div class="main-content-desc">A modal is a dialog box/popup window that is displayed on top of the current page.</div>
 
             <!-- <div class="main-content-subtitle"></div> -->
             <div class="component-display"> 
-               <button class="btn showBtn">Show Live Toast</button>
-               <div class="toast">This is a demo live toast </div>
+               <button class="btn showBtn">Show Live Modal</button>
+               <div class="modal">
+                   <div class="modal-body">
+                        <span class="cross close-modal"><i class="fas fa-times"></i></span>
+                        <div class="modal-title">This is Modal Title</div>
+                        <div class="modal-content">
+                            <p>This is the content of live modal.</p>
+                            <p>To close the modal, click on close icon or close button or at any other place outside the modal.</p>
+                        </div>
+                        <div class="buttons-div">
+                            <button class="btn secondary-btn close-modal">Close</button>
+                            <button class="btn">Continue</button>
+                        </div>
+                   </div>      
+
+                </div>
+               </div>
             </div>
 
             
@@ -98,7 +113,7 @@
         <p>Sumo Design v1.0</p>
     </footer>
 
-    <script src="./toast.js"></script>
+    <script src="./modal.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script> -->
 </body>

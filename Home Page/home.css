@@ -72,8 +72,7 @@ header{
     cursor: pointer;
     transition: all 0.3s ease 0s;;
     font-weight: bold;
-    color: var(--font-primary-color);
-  
+    color: var(--font-primary-color);  
 }
 .btn:hover{
     background-color: var(--primary-hover);
