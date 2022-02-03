@@ -75,7 +75,7 @@ header{
     color: var(--font-primary-color);
   
 }
-button:hover{
+.btn:hover{
     background-color: var(--primary-hover);
 }
 
@@ -122,11 +122,18 @@ button:hover{
     font-size: 2rem;
 }
 .main-content-subtitle{
+    color: var(--font--secondary-color);
+    margin-bottom:1rem;
+  font-weight: 100;
+    font-size: 1.5rem;
+}
+.main-content-desc{
     line-height: 2rem;
     font-size: large;
 }
 .component-display{
     background-color: var(--font-primary-color);
+    /* color: black; */
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
