@@ -122,3 +122,15 @@ a{
 }
 
 /* icon button */
+.icon-btn{
+    margin-right: 0.5rem;
+}
+/* floating action button */
+.btn-float{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-btn-color);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
